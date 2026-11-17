@@ -1,0 +1,113 @@
+2026-11-17T07:54:37-05:00
+Running ./out/broadcast_ring_buffer_benchmark
+Run on (8 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 256 KiB (x4)
+  L3 Unified 8192 KiB (x1)
+Load Average: 2.19, 1.32, 0.97
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                           Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BroadcastRingBufferBenchmark/Produce/8_mean                      39.2 ns         39.2 ns            3 bytes_per_second=194.678Mi/s
+BroadcastRingBufferBenchmark/Produce/8_median                    39.1 ns         39.1 ns            3 bytes_per_second=195.246Mi/s
+BroadcastRingBufferBenchmark/Produce/8_stddev                   0.194 ns        0.208 ns            3 bytes_per_second=1.02867Mi/s
+BroadcastRingBufferBenchmark/Produce/8_cv                        0.49 %          0.53 %             3 bytes_per_second=0.53%
+BroadcastRingBufferBenchmark/Produce/64_mean                     41.3 ns         41.2 ns            3 bytes_per_second=1.44531Gi/s
+BroadcastRingBufferBenchmark/Produce/64_median                   41.5 ns         41.4 ns            3 bytes_per_second=1.43927Gi/s
+BroadcastRingBufferBenchmark/Produce/64_stddev                  0.366 ns        0.362 ns            3 bytes_per_second=13.0437Mi/s
+BroadcastRingBufferBenchmark/Produce/64_cv                       0.89 %          0.88 %             3 bytes_per_second=0.88%
+BroadcastRingBufferBenchmark/Produce/512_mean                    69.6 ns         69.6 ns            3 bytes_per_second=6.90832Gi/s
+BroadcastRingBufferBenchmark/Produce/512_median                  67.1 ns         67.1 ns            3 bytes_per_second=7.1093Gi/s
+BroadcastRingBufferBenchmark/Produce/512_stddev                  7.68 ns         7.68 ns            3 bytes_per_second=747.608Mi/s
+BroadcastRingBufferBenchmark/Produce/512_cv                     11.04 %         11.05 %             3 bytes_per_second=10.57%
+BroadcastRingBufferBenchmark/Produce/4096_mean                    652 ns          649 ns            3 bytes_per_second=5.96471Gi/s
+BroadcastRingBufferBenchmark/Produce/4096_median                  692 ns          687 ns            3 bytes_per_second=5.55016Gi/s
+BroadcastRingBufferBenchmark/Produce/4096_stddev                 95.9 ns         94.4 ns            3 bytes_per_second=960.598Mi/s
+BroadcastRingBufferBenchmark/Produce/4096_cv                    14.71 %         14.54 %             3 bytes_per_second=15.73%
+BroadcastRingBufferBenchmark/Produce/8192_mean                    678 ns          678 ns            3 bytes_per_second=11.3184Gi/s
+BroadcastRingBufferBenchmark/Produce/8192_median                  647 ns          647 ns            3 bytes_per_second=11.7979Gi/s
+BroadcastRingBufferBenchmark/Produce/8192_stddev                 63.9 ns         63.7 ns            3 bytes_per_second=1.01111Gi/s
+BroadcastRingBufferBenchmark/Produce/8192_cv                     9.42 %          9.40 %             3 bytes_per_second=8.93%
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8_mean            83.0 ns         82.9 ns            3 bytes_per_second=91.998Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8_median          82.9 ns         82.8 ns            3 bytes_per_second=92.0941Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8_stddev         0.346 ns        0.314 ns            3 bytes_per_second=356.316Ki/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8_cv              0.42 %          0.38 %             3 bytes_per_second=0.38%
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/64_mean           84.6 ns         84.5 ns            3 bytes_per_second=722.168Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/64_median         84.4 ns         84.3 ns            3 bytes_per_second=723.895Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/64_stddev         1.89 ns         1.91 ns            3 bytes_per_second=16.2934Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/64_cv             2.23 %          2.26 %             3 bytes_per_second=2.26%
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/512_mean           107 ns          107 ns            3 bytes_per_second=4.44787Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/512_median         107 ns          107 ns            3 bytes_per_second=4.45865Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/512_stddev       0.555 ns        0.546 ns            3 bytes_per_second=23.1135Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/512_cv            0.52 %          0.51 %             3 bytes_per_second=0.51%
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/4096_mean          394 ns          394 ns            3 bytes_per_second=9.68289Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/4096_median        394 ns          393 ns            3 bytes_per_second=9.70582Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/4096_stddev       2.38 ns         2.37 ns            3 bytes_per_second=59.4728Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/4096_cv           0.60 %          0.60 %             3 bytes_per_second=0.60%
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8192_mean          778 ns          777 ns            3 bytes_per_second=9.82477Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8192_median        774 ns          772 ns            3 bytes_per_second=9.87643Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8192_stddev       7.93 ns         8.00 ns            3 bytes_per_second=102.997Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8192_cv           1.02 %          1.03 %             3 bytes_per_second=1.02%
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8_mean            4950 ns         4945 ns            3 bytes_per_second=154.279Mi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8_median          4948 ns         4946 ns            3 bytes_per_second=154.259Mi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8_stddev          8.99 ns         6.50 ns            3 bytes_per_second=207.598Ki/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8_cv              0.18 %          0.13 %             3 bytes_per_second=0.13%
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/64_mean           4942 ns         4938 ns            3 bytes_per_second=1.20714Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/64_median         4914 ns         4910 ns            3 bytes_per_second=1.21383Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/64_stddev         65.5 ns         64.3 ns            3 bytes_per_second=15.9799Mi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/64_cv             1.33 %          1.30 %             3 bytes_per_second=1.29%
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/512_mean          5049 ns         5030 ns            3 bytes_per_second=9.48Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/512_median        5025 ns         5007 ns            3 bytes_per_second=9.52283Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/512_stddev        45.4 ns         42.4 ns            3 bytes_per_second=81.5082Mi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/512_cv            0.90 %          0.84 %             3 bytes_per_second=0.84%
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/4096_mean         7201 ns         7044 ns            3 bytes_per_second=54.2558Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/4096_median       7215 ns         7055 ns            3 bytes_per_second=54.0688Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/4096_stddev        390 ns          374 ns            3 bytes_per_second=2.89081Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/4096_cv           5.42 %          5.31 %             3 bytes_per_second=5.33%
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8192_mean         8142 ns         7978 ns            3 bytes_per_second=95.7509Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8192_median       8038 ns         7880 ns            3 bytes_per_second=96.8212Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8192_stddev        358 ns          343 ns            3 bytes_per_second=4.04841Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8192_cv           4.39 %          4.30 %             3 bytes_per_second=4.23%
+BroadcastRingBufferBenchmark/RoundTripCopy/8_mean                86.7 ns         86.6 ns            3 bytes_per_second=88.16Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8_median              86.8 ns         86.6 ns            3 bytes_per_second=88.1395Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8_stddev              1.54 ns         1.56 ns            3 bytes_per_second=1.59423Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8_cv                  1.78 %          1.81 %             3 bytes_per_second=1.81%
+BroadcastRingBufferBenchmark/RoundTripCopy/64_mean               88.7 ns         88.6 ns            3 bytes_per_second=689.225Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/64_median             89.0 ns         88.7 ns            3 bytes_per_second=688.113Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/64_stddev             1.15 ns         1.23 ns            3 bytes_per_second=9.57004Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/64_cv                 1.30 %          1.39 %             3 bytes_per_second=1.39%
+BroadcastRingBufferBenchmark/RoundTripCopy/512_mean               118 ns          118 ns            3 bytes_per_second=4.03668Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/512_median             116 ns          115 ns            3 bytes_per_second=4.13711Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/512_stddev            6.12 ns         6.16 ns            3 bytes_per_second=209.14Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/512_cv                5.16 %          5.21 %             3 bytes_per_second=5.06%
+BroadcastRingBufferBenchmark/RoundTripCopy/4096_mean              440 ns          439 ns            3 bytes_per_second=8.7Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/4096_median            444 ns          444 ns            3 bytes_per_second=8.59295Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/4096_stddev           17.0 ns         16.9 ns            3 bytes_per_second=349.43Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/4096_cv               3.86 %          3.86 %             3 bytes_per_second=3.92%
+BroadcastRingBufferBenchmark/RoundTripCopy/8192_mean              872 ns          871 ns            3 bytes_per_second=8.76136Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8192_median            877 ns          875 ns            3 bytes_per_second=8.71867Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8192_stddev           8.03 ns         7.79 ns            3 bytes_per_second=80.7202Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8192_cv               0.92 %          0.90 %             3 bytes_per_second=0.90%
+BroadcastRingBufferBenchmark/PollCopyBatch/8_mean                2371 ns         2368 ns            3 bytes_per_second=322.536Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8_median              2328 ns         2319 ns            3 bytes_per_second=329.046Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8_stddev              97.3 ns          100 ns            3 bytes_per_second=13.315Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8_cv                  4.11 %          4.23 %             3 bytes_per_second=4.13%
+BroadcastRingBufferBenchmark/PollCopyBatch/64_mean               2469 ns         2463 ns            3 bytes_per_second=2.44335Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/64_median             2318 ns         2315 ns            3 bytes_per_second=2.57503Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/64_stddev              315 ns          308 ns            3 bytes_per_second=292.691Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/64_cv                12.76 %         12.50 %             3 bytes_per_second=11.70%
+BroadcastRingBufferBenchmark/PollCopyBatch/512_mean              3261 ns         3245 ns            3 bytes_per_second=14.798Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/512_median            3071 ns         3059 ns            3 bytes_per_second=15.5896Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/512_stddev             347 ns          340 ns            3 bytes_per_second=1.46453Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/512_cv               10.64 %         10.49 %             3 bytes_per_second=9.90%
+BroadcastRingBufferBenchmark/PollCopyBatch/4096_mean            21369 ns        21226 ns            3 bytes_per_second=18.0133Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/4096_median          20710 ns        20572 ns            3 bytes_per_second=18.5431Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/4096_stddev           1271 ns         1269 ns            3 bytes_per_second=1.04182Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/4096_cv               5.95 %          5.98 %             3 bytes_per_second=5.78%
+BroadcastRingBufferBenchmark/PollCopyBatch/8192_mean            50742 ns        50563 ns            3 bytes_per_second=15.0891Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8192_median          50805 ns        50630 ns            3 bytes_per_second=15.0688Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8192_stddev            173 ns          205 ns            3 bytes_per_second=62.6052Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8192_cv               0.34 %          0.40 %             3 bytes_per_second=0.41%

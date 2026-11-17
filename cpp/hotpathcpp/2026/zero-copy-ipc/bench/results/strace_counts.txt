@@ -1,0 +1,28 @@
+== RoundTripZeroCopy/8$ x1000
+ 20.83    0.000328           6        52           mmap
+  6.73    0.000106           2        36         2 openat
+  5.90    0.000093          15         6           munmap
+  0.51    0.000008           4         2           ftruncate
+  0.32    0.000005           2         2           clock_gettime
+100.00    0.001575           5       295         7 total
+== RoundTripZeroCopy/8$ x10000
+ 18.14    0.000316           6        52           mmap
+ 15.10    0.000263           7        36         2 openat
+  3.85    0.000067          11         6           munmap
+  0.46    0.000008           4         2           ftruncate
+  0.34    0.000006           3         2           clock_gettime
+100.00    0.001742           5       295         7 total
+== PollZeroCopyBatch/8$ x1000
+ 81.86    0.001647           0      2002           clock_gettime
+  2.39    0.000048           8         6           munmap
+  0.00    0.000000           0        52           mmap
+  0.00    0.000000           0         2           ftruncate
+  0.00    0.000000           0        36         2 openat
+100.00    0.002012           0      2295         7 total
+== PollZeroCopyBatch/8$ x10000
+ 85.09    0.019430           0     20002           clock_gettime
+  5.22    0.001192         198         6           munmap
+  0.63    0.000145           2        52           mmap
+  0.13    0.000029           0        36         2 openat
+  0.00    0.000001           0         2           ftruncate
+100.00    0.022835           1     20295         7 total

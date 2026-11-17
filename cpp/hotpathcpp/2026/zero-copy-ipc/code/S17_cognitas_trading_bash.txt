@@ -1,0 +1,7 @@
+Performance counter stats for './broadcast_ring_buffer_benchmark':
+    48,291,048,192      cycles                    #    5.120 GHz
+   183,506,083,129      instructions              #    3.80  insn per cycle
+           142,019      cache-misses              #    0.04% of all L1 cache
+            52,810      branch-misses             #    0.02% of all branches
+
+  10.001429810 seconds time elapsed (Throu

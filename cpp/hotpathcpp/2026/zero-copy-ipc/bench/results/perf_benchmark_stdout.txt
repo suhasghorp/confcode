@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------------------------------------
+Benchmark                                                    Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------------------------------
+BroadcastRingBufferBenchmark/Produce/8                    39.8 ns         39.7 ns     17768175 bytes_per_second=191.993Mi/s
+BroadcastRingBufferBenchmark/Produce/64                   41.0 ns         41.0 ns     13983800 bytes_per_second=1.45427Gi/s
+BroadcastRingBufferBenchmark/Produce/512                  64.8 ns         64.6 ns      9506618 bytes_per_second=7.38281Gi/s
+BroadcastRingBufferBenchmark/Produce/4096                  427 ns          426 ns      1397744 bytes_per_second=8.95473Gi/s
+BroadcastRingBufferBenchmark/Produce/8192                  812 ns          811 ns       963008 bytes_per_second=9.4083Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8          88.4 ns         88.4 ns      7174484 bytes_per_second=86.3004Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/64         82.5 ns         82.3 ns      7314056 bytes_per_second=741.251Mi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/512         105 ns          105 ns      5656861 bytes_per_second=4.53138Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/4096        394 ns          394 ns      1760362 bytes_per_second=9.67241Gi/s
+BroadcastRingBufferBenchmark/RoundTripZeroCopy/8192        782 ns          780 ns       865399 bytes_per_second=9.78101Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8          5518 ns         5517 ns       126967 bytes_per_second=138.288Mi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/64         4929 ns         4921 ns       136587 bytes_per_second=1.21135Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/512        5202 ns         5177 ns       138792 bytes_per_second=9.21131Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/4096       6823 ns         6687 ns       103071 bytes_per_second=57.0506Gi/s
+BroadcastRingBufferBenchmark/PollZeroCopyBatch/8192       7902 ns         7737 ns        85345 bytes_per_second=98.6048Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8              85.4 ns         85.4 ns      7122147 bytes_per_second=89.3788Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/64             87.7 ns         87.7 ns      6828042 bytes_per_second=696.292Mi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/512             115 ns          115 ns      5631765 bytes_per_second=4.15494Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/4096            552 ns          551 ns      1141139 bytes_per_second=6.92433Gi/s
+BroadcastRingBufferBenchmark/RoundTripCopy/8192            893 ns          889 ns       753986 bytes_per_second=8.57837Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8              2324 ns         2319 ns       300039 bytes_per_second=329.033Mi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/64             2252 ns         2247 ns       309771 bytes_per_second=2.65205Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/512            3539 ns         3499 ns       234028 bytes_per_second=13.6297Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/4096          23629 ns        23391 ns        28419 bytes_per_second=16.3086Gi/s
+BroadcastRingBufferBenchmark/PollCopyBatch/8192          50367 ns        50189 ns        10000 bytes_per_second=15.2012Gi/s

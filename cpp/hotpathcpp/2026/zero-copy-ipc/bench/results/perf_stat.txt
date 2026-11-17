@@ -1,0 +1,24 @@
+2026-11-17T07:56:41-05:00
+Running ./out/broadcast_ring_buffer_benchmark
+Run on (8 X 3900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 256 KiB (x4)
+  L3 Unified 8192 KiB (x1)
+Load Average: 1.59, 1.39, 1.05
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+
+ Performance counter stats for './out/broadcast_ring_buffer_benchmark':
+
+   171,073,131,304      cycles                                                                
+   160,000,763,990      instructions                                                          
+     4,856,972,469      cache-misses                                                          
+        39,820,832      branch-misses                                                         
+
+      45.718986001 seconds time elapsed
+
+      43.116793000 seconds user
+       2.512850000 seconds sys
+
+

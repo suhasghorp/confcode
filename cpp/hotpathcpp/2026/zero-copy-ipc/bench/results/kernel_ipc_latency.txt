@@ -1,0 +1,6 @@
+pipe                   one-way 8B: p50    3116 ns | p99   11116 ns | p99.99   25464 ns
+unix socket (stream)   one-way 8B: p50    3466 ns | p99   14789 ns | p99.99   65745 ns
+pipe                   one-way 8B: p50    3114 ns | p99   11094 ns | p99.99   25540 ns
+unix socket (stream)   one-way 8B: p50    3442 ns | p99   14012 ns | p99.99   61198 ns
+pipe                   one-way 8B: p50    3108 ns | p99   11124 ns | p99.99   25121 ns
+unix socket (stream)   one-way 8B: p50    3473 ns | p99   13310 ns | p99.99   63488 ns

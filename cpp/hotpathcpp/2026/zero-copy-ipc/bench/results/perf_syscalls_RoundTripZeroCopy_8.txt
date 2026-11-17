@@ -1,0 +1,6 @@
+RoundTripZeroCopy/8 x100000:
+event syntax error: 'raw_syscalls:sys_enter,context-switches,page-faults'
+Error:	No permissions to read /sys/kernel/tracing//events/raw_syscalls/sys_enter
+RoundTripZeroCopy/8 x1000000:
+event syntax error: 'raw_syscalls:sys_enter,context-switches,page-faults'
+Error:	No permissions to read /sys/kernel/tracing//events/raw_syscalls/sys_enter

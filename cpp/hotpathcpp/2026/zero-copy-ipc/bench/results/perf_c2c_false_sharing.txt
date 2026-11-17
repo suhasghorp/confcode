@@ -1,0 +1,6 @@
+== packed rmw
+  Total records                     :      42324
+  Load Local HITM                   :      13050
+== aligned rmw
+  Total records                     :       8456
+  Load Local HITM                   :          0

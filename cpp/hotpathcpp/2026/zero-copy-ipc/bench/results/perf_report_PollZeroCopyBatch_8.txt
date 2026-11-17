@@ -1,0 +1,15 @@
+    17.33%  [.] 0x0000000000000997                                                                                                          -      -            
+    14.26%  [.] absl::lts_20260526::Now()                                                                                                   -      -            
+    11.04%  [.] cognitas::trading::BroadcastRingBuffer::Reserve(unsigned int, unsigned int)                                                 -      -            
+     7.98%  [.] cognitas::trading::BroadcastRingBuffer::PollZeroCopy(cognitas::trading::BroadcastReader&, cognitas::trading::FrameHeader&)  -      -            
+     7.61%  [.] cognitas::trading::BroadcastRingBuffer::Advance(cognitas::trading::BroadcastReader&, unsigned long)                         -      -            
+     3.59%  [k] 0xffffffffb30001bd                                                                                                          -      -            
+     3.34%  [.] cognitas::trading::BroadcastRingBufferBenchmark_PollZeroCopyBatch_Benchmark::BenchmarkCase(benchmark::State&)               -      -            
+     2.62%  [.] absl::lts_20260526::GetCurrentTimeNanos()                                                                                   -      -            
+     2.60%  [.] absl::lts_20260526::ToUnixNanos(absl::lts_20260526::Time)                                                                   -      -            
+     2.34%  [.] 0x00000000000009ca                                                                                                          -      -            
+     1.78%  [.] clock_gettime@@GLIBC_2.17                                                                                                   -      -            
+     1.65%  [.] 0x000000000000099a                                                                                                          -      -            
+     1.64%  [k] 0xffffffffb300014b                                                                                                          -      -            
+     1.32%  [k] 0xffffffffb300010b                                                                                                          -      -            
+     1.08%  [k] 0xffffffffb300009c                                                                                                          -      -            

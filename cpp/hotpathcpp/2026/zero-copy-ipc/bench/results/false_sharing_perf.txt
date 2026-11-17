@@ -1,0 +1,32 @@
+pattern: load + release store
+packed  (same line):    2.26 ns per update
+ Performance counter stats for './out/false_sharing packed store':
+     1,607,811,438      cycles                                                                
+     1,607,101,377      instructions                                                          
+            92,241      cache-misses                                                          
+            35,879      branch-misses                                                         
+       0.227974553 seconds time elapsed
+pattern: load + release store
+aligned (own line each): 1.51 ns per update
+ Performance counter stats for './out/false_sharing aligned store':
+     1,064,920,415      cycles                                                                
+     1,605,875,418      instructions                                                          
+            75,814      cache-misses                                                          
+            29,753      branch-misses                                                         
+       0.152792179 seconds time elapsed
+pattern: atomic fetch_add
+packed  (same line):    27.39 ns per update
+ Performance counter stats for './out/false_sharing packed rmw':
+    18,731,396,625      cycles                                                                
+     1,244,330,525      instructions                                                          
+           393,411      cache-misses                                                          
+           172,350      branch-misses                                                         
+       2.740609095 seconds time elapsed
+pattern: atomic fetch_add
+aligned (own line each): 5.14 ns per update
+ Performance counter stats for './out/false_sharing aligned rmw':
+     3,640,379,393      cycles                                                                
+     1,211,605,803      instructions                                                          
+           117,359      cache-misses                                                          
+            52,556      branch-misses                                                         
+       0.515917651 seconds time elapsed
