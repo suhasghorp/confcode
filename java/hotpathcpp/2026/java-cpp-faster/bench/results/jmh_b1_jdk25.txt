@@ -1,0 +1,6 @@
+Battle1Bench.preallocatedRing                           1  avgt    5     1.931 ±   0.027   ns/op
+Battle1Bench.preallocatedRing:gc.alloc.rate.norm        1  avgt    5    ≈ 10⁻⁵              B/op
+Battle1Bench.preallocatedRing                           2  avgt    5     1.820 ±   0.025   ns/op
+Battle1Bench.preallocatedRing:gc.alloc.rate.norm        2  avgt    5    ≈ 10⁻⁵              B/op
+Battle1Bench.preallocatedRing                           5  avgt    5     5.534 ±   0.519   ns/op
+Battle1Bench.preallocatedRing:gc.alloc.rate.norm        5  avgt    5    32.000 ±   0.001    B/op

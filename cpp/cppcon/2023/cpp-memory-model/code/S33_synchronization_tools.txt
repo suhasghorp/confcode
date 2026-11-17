@@ -1,0 +1,6 @@
+get_once(int):                          # @get_once(int)
+        movzx   eax, byte ptr [rip + guard variable for get_once(int)::single]
+        test    al, al
+        je      .LBB3_1
+        lea     rax, [rip + get_once(int)::single]
+        ret

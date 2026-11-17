@@ -1,0 +1,4 @@
+; Warmed 100,000x on LimitOrderEvent (100% Monomorphic Bet)
+cmp   DWORD PTR [rsi + 8], 0x248a1c00
+jne   .L_uncommon_trap_blob
+call  Deoptimization::uncommon_trap

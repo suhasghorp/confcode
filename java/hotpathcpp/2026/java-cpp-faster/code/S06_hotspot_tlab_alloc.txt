@@ -1,0 +1,9 @@
+; R15 holds JavaThread* on x86-64 OpenJDK 21
+mov   rax, QWORD PTR [r15 + 0x118]
+lea   rbx, [rax + 24]
+cmp   rbx, QWORD PTR [r15 + 0x128]
+ja    .L_tlab_slow_refill
+mov   QWORD PTR [r15 + 0x118], rbx
+mov   QWORD PTR [rax], 0x1
+mov   DWORD PTR [rax + 8], 0x248a1c00
+; Scope exit: 0 instructions! Short-lived objects die in Eden.

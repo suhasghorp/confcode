@@ -1,0 +1,3 @@
+<source>:16:19: error: no matching function for call to 'spawn_thread'
+   16 |     auto thread = spawn_thread([&str] {
+      |                   ^~~~~~~~~~~~

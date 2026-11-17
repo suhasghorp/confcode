@@ -1,0 +1,27 @@
+== battle1_o3
+Run on (8 X 3900 MHz CPU s)
+CPU Caches:
+BM_NaiveOOP_median               35.6 ns         35.6 ns            5
+BM_NaiveOOP_stddev               5.06 ns         5.05 ns            5
+BM_PreallocatedRing_median       1.53 ns         1.53 ns            5
+BM_PreallocatedRing_stddev      0.021 ns        0.021 ns            5
+BM_FlatValueStruct_median        1.08 ns         1.08 ns            5
+BM_FlatValueStruct_stddev       0.007 ns        0.007 ns            5
+== battle1_flto
+Run on (8 X 3900 MHz CPU s)
+CPU Caches:
+BM_NaiveOOP_median               35.1 ns         35.1 ns            5
+BM_NaiveOOP_stddev              0.367 ns        0.379 ns            5
+BM_PreallocatedRing_median       1.89 ns         1.89 ns            5
+BM_PreallocatedRing_stddev      0.016 ns        0.016 ns            5
+BM_FlatValueStruct_median       0.820 ns        0.819 ns            5
+BM_FlatValueStruct_stddev       0.005 ns        0.005 ns            5
+== battle2
+Run on (8 X 3900 MHz CPU s)
+CPU Caches:
+BM_Battle2_Vector_median                         9.00 ms         8.99 ms            5
+BM_Battle2_Vector_stddev                        0.142 ms        0.143 ms            5
+BM_Battle2_PointerArray_ChurnedHeap_median       50.2 ms         50.2 ms            5
+BM_Battle2_PointerArray_ChurnedHeap_stddev      0.772 ms        0.753 ms            5
+BM_Battle2_SoA_median                            6.82 ms         6.81 ms            5
+BM_Battle2_SoA_stddev                           0.597 ms        0.595 ms            5

@@ -1,0 +1,3 @@
+[B1] C++ OOP:     16.8 ns  | Java C2:   0.73 ns  | C++ Flat: 0.55 ns
+[B2] C++ Vector:  4.74 ms  | Java List: 32.21 ms | SoA SIMD: 1.55 ms
+[B3] C++ p99.99:  8.17 μs  | G1 Max:    11.16 ms | ZGC Max:  268.7 μs

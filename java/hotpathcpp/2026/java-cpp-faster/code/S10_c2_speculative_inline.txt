@@ -1,0 +1,7 @@
+; RSI = OrderEvent reference inside hot loop
+cmp   DWORD PTR [rsi + 8], 0x248a1c00
+jne   .L_uncommon_trap
+; --- Speculatively Inlined LimitOrderEvent Arithmetic ---
+mov   rax, QWORD PTR [rsi + 16]
+imul  rax, QWORD PTR [rsi + 24]
+sub   rax, QWORD PTR [rsi + 32]

@@ -1,0 +1,6 @@
+; 64-Bit ZGC Colored OOP: [16b Color Metadata | 46b Object Addr]
+mov   rax, QWORD PTR [rsi + rdx*8 + 16]
+test  rax, QWORD PTR [r15 + 0x28]
+jne   .L_zgc_load_barrier_slow_stub
+shr   rax, 16
+mov   rcx, QWORD PTR [rax + 16]

@@ -1,0 +1,9 @@
+<source>:26:5: error: no matching function for call to 'fork'
+   26 |     fork(
+      |     ^~~~
+<source>:15:6: note: candidate template ignored: constraints not satisfied [with Fn1 = (lambda at <source>:27:9), Fn2 = (lambda at <source>:30:9)]
+   15 | void fork(Fn1&& fn1, Fn2&& fn2)
+      |      ^
+<source>:13:14: note: because 'std::decay_t<(lambda at <source>:27:9)>' (aka '(lambda at <source>:27:9)') does not satisfy 'sendable'
+   13 |     requires tcb::sendable<std::decay_t<Fn1>> &&
+      |              ^

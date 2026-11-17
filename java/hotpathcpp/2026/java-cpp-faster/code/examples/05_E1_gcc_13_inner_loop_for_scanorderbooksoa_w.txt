@@ -1,0 +1,8 @@
+.L4:
+    vmovdqu64  zmm3, ZMMWORD PTR [r8+rax]            ; 8 prices
+    vpmullq    zmm0, zmm3, ZMMWORD PTR [rsi+rax]     ; x 8 quantities (64-bit low products)
+    vpandq     zmm0, zmm0, ZMMWORD PTR [rcx+rax]     ; & 8 masks
+    add        rax, 64                               ; advance 64 bytes = 8 elements
+    vpaddq     zmm1, zmm1, zmm0                      ; 8 running totals
+    cmp        rax, rdx
+    jne        .L4

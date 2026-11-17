@@ -1,0 +1,4 @@
+ASM generation compiler returned: 0
+Execution build compiler returned: 0
+Program returned: 0
+Hello

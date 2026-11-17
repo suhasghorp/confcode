@@ -1,0 +1,4 @@
+; RDI = Event* from ring[i]
+mov   rax, QWORD PTR [rdi]
+call  QWORD PTR [rax + 24]
+sub   rax, rdx

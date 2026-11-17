@@ -1,0 +1,31 @@
+[project]
+name = "confcode"
+version = "0.1.0"
+description = "Turn conference talks (C++, Java, Rust) on YouTube into tested, textbook-style articles with all on-screen code"
+authors = [
+    { name = "suhasghorp", email = "suhasghorp@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=2.8.0",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "pydantic>=2.14.3",
+    "typer>=0.29.1",
+    "yt-dlp>=2026.10.26",
+]
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.1"]
+
+[project.scripts]
+confcode = "confcode.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

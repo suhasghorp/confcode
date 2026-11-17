@@ -1,0 +1,17 @@
+IncsharedXtimeAquire():                 # @IncsharedXtimeAquire()
+        xor     ecx, ecx
+        mov     edx, 1
+        jmp     .LBB1_1
+.LBB1_3:                                #   in Loop: Header=BB1_1 Depth=1
+        cmp     ecx, 10000000
+        jge     .LBB1_4
+.LBB1_1:                                # =>This Inner Loop Header: Depth=1
+        xor     eax, eax
+        lock            cmpxchg dword ptr [rip + flag], edx
+        jne     .LBB1_3
+        inc     qword ptr [rip + shared_val]
+        inc     ecx
+        mov     dword ptr [rip + flag], 0
+        jmp     .LBB1_3
+.LBB1_4:
+        ret

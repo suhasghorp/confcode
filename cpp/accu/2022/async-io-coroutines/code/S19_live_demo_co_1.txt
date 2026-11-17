@@ -1,0 +1,34 @@
+$ ./co_1
+promise<incoming>()
+promise<incoming>::get_return_object()
+task<incoming>()
+promise<incoming>::initial_suspend()
+promise<printer>()
+promise<printer>::get_return_object()
+task<printer>()
+promise<printer>::initial_suspend()
+print_all
+task<incoming>::co_await()
+awaitable<incoming>::await_ready()
+promise<incoming>::is_ready() -> 0
+awaitable<incoming>::await_suspend()
+promise<incoming>::yield_value(4)
+awaitable<incoming>::await_resume()
+promise<incoming>::get() ->4
+4
+task<incoming>::co_await()
+awaitable<incoming>::await_ready()
+promise<incoming>::is_ready() -> 0
+awaitable<incoming>::await_suspend()
+promise<incoming>::yield_value(2)
+awaitable<incoming>::await_resume()
+promise<incoming>::get() ->2
+2
+task<incoming>::co_await()
+awaitable<incoming>::await_ready()
+promise<incoming>::is_ready() -> 0
+awaitable<incoming>::await_suspend()
+~task<printer>()
+~promise<printer>()
+~task<incoming>()
+~promise<incoming>()

@@ -1,0 +1,19 @@
+IncsharedXtimeNoAquire():                # @IncsharedXtimeNoAquire()
+        xor     ecx, ecx
+        mov     rdx, qword ptr [rip + shared_val]
+        mov     esi, 1
+        jmp     .LBB0_1
+.LBB0_3:                                #   in Loop: Header=BB0_1 Depth=1
+        cmp     ecx, 10000000
+        jge     .LBB0_4
+.LBB0_1:                                # =>This Inner Loop Header: Depth=1
+        xor     eax, eax
+        lock            cmpxchg dword ptr [rip + flag], esi
+        jne     .LBB0_3
+        inc     rdx
+        mov     qword ptr [rip + shared_val], rdx
+        inc     ecx
+        mov     dword ptr [rip + flag], 0
+        jmp     .LBB0_3
+.LBB0_4:
+        ret

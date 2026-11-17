@@ -1,0 +1,5 @@
+dead_code(int):
+        xor     eax, eax
+        test    edi, edi
+        cmovg   eax, edi
+        ret

@@ -1,0 +1,3 @@
+ret a: 30
+ret b: 20
+main inc: 30

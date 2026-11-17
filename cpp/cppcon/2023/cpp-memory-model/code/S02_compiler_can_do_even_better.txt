@@ -1,0 +1,3 @@
+main:                                   # @main
+        mov     eax, 247500
+        ret

@@ -1,0 +1,3 @@
+Holder releasing lock
+Worker Spin lock opened doing stuff
+Worker releasing lock
